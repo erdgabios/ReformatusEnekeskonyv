@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReformatusEnekeskonyv" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,99 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ugf-JW-ZdR">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textShadowColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Főoldal" id="WTh-3q-M4E"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-App-83.5x83.5" translatesAutoresizingMaskIntoConstraints="NO" id="VXr-ms-5FP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="qkj-2F-Faw"/>
+                                    <constraint firstAttribute="width" constant="83" id="uOG-Y4-Tye"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Református énekeskönyv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rab-TD-lwN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="BlL-pZ-3is"/>
+                                    <constraint firstAttribute="height" constant="21" id="YcX-Yd-cIW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbr-tw-b3K">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="hc2-GU-1gr"/>
+                                    <constraint firstAttribute="height" constant="30" id="oK1-o7-jK4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Lapozzd Fel">
+                                    <color key="titleColor" red="0.1529411765" green="0.63529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lapozzdFelButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gca-pR-cPg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ének száma, 1-512 ..." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mow-NN-RDf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hP7-bn-jrG"/>
+                                    <constraint firstAttribute="width" constant="225" id="uuf-07-9fB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OCS-0I-JUz"/>
+                                </connections>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-512!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFN-KO-Bec">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="9ni-hh-ZzQ"/>
+                                    <constraint firstAttribute="height" constant="21" id="kEM-hb-192"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ugf-JW-ZdR" firstAttribute="centerX" secondItem="VXr-ms-5FP" secondAttribute="centerX" id="3E9-et-mfc"/>
+                            <constraint firstItem="Mow-NN-RDf" firstAttribute="top" secondItem="VXr-ms-5FP" secondAttribute="bottom" constant="48" id="52k-cg-Vnr"/>
+                            <constraint firstItem="Nbr-tw-b3K" firstAttribute="top" secondItem="Mow-NN-RDf" secondAttribute="bottom" constant="47" id="5Bs-2Q-n3b"/>
+                            <constraint firstItem="Mow-NN-RDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9z2-Go-ZAj"/>
+                            <constraint firstItem="BFN-KO-Bec" firstAttribute="top" secondItem="VXr-ms-5FP" secondAttribute="bottom" constant="19" id="FQC-nB-bsG"/>
+                            <constraint firstItem="BFN-KO-Bec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ILt-1B-Dly"/>
+                            <constraint firstItem="rab-TD-lwN" firstAttribute="top" secondItem="ugf-JW-ZdR" secondAttribute="bottom" constant="40" id="JEr-tw-E5d"/>
+                            <constraint firstItem="ugf-JW-ZdR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NNp-63-cR3"/>
+                            <constraint firstItem="VXr-ms-5FP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TvG-Y7-Oge"/>
+                            <constraint firstItem="VXr-ms-5FP" firstAttribute="top" secondItem="ugf-JW-ZdR" secondAttribute="bottom" constant="94" id="Xss-N0-C7g"/>
+                            <constraint firstItem="ugf-JW-ZdR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dzW-3T-abc"/>
+                            <constraint firstItem="rab-TD-lwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mPs-af-hGK"/>
+                            <constraint firstItem="Nbr-tw-b3K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rq9-5W-h89"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="Nbr-tw-b3K" id="04i-Vu-OPK"/>
+                        <outlet property="enekSzamTextField" destination="Mow-NN-RDf" id="dbb-BF-fFm"/>
+                        <outlet property="warning" destination="BFN-KO-Bec" id="CtA-7h-oUS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="111.2" y="129.08545727136433"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon-App-83.5x83.5" width="83" height="83"/>
+    </resources>
 </document>
