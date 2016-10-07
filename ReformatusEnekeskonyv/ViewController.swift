@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
     
     
+    
+    
     @IBOutlet weak var warning: UILabel!
 
     @IBOutlet weak var enekSzamTextField: UITextField!
@@ -92,7 +94,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return false
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dalOldal: ViewEnek = segue.destination as! ViewEnek
+        
+        dalOldal.esz = enekSzamTextField.text!
+        
+        
+        
+        
+    }
     
+        
 
 }
 
