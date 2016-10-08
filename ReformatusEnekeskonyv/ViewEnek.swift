@@ -38,6 +38,7 @@ class ViewEnek: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         let eszSzam = esz
         let dalSzam = Int(eszSzam)
         
