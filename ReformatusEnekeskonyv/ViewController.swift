@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     
+    @IBOutlet weak var szamWarning: UILabel!
     
     @IBOutlet weak var warning: UILabel!
 
@@ -66,10 +67,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        warning.isHidden = true
-        return true
-    }
+//    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+//        //warning.isHidden = true
+//        return true
+//    }
     
     
     
@@ -78,14 +79,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if let enekszam = enek {
             if let enekszamInteger = Int(enekszam) {
                 if enekszamInteger > 0 && enekszamInteger < 513 {
-                    warning.isHidden = true
+                   // warning.isHidden = true
+                    szamWarning.text = "(1-512)"
+                    szamWarning.textColor = UIColor.black
                     button.isEnabled = true
                     return true
                     
                 } else {
                 
-                    warning.isHidden = false
-                    
+                   // warning.isHidden = false
+                    szamWarning.text = "1-512!"
+                    szamWarning.textColor = UIColor.red
                     
                 }
             }
