@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-App-83.5x83.5" translatesAutoresizingMaskIntoConstraints="NO" id="VXr-ms-5FP">
@@ -82,19 +82,10 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ének száma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByW-Pk-Dgt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ének száma(1-512)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByW-Pk-Dgt">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="107" id="8uI-yh-srp"/>
+                                    <constraint firstAttribute="width" constant="173" id="8uI-yh-srp"/>
                                     <constraint firstAttribute="height" constant="21" id="sdd-WO-ZxQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1-512)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-ne-5zh">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="0k1-5m-PlH"/>
-                                    <constraint firstAttribute="width" constant="66" id="jaK-hB-50Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -108,30 +99,27 @@
                             <constraint firstItem="Nbr-tw-b3K" firstAttribute="top" secondItem="Mow-NN-RDf" secondAttribute="bottom" constant="47" id="5Bs-2Q-n3b"/>
                             <constraint firstItem="ByW-Pk-Dgt" firstAttribute="top" secondItem="VXr-ms-5FP" secondAttribute="bottom" constant="19" id="6vZ-f9-QLr"/>
                             <constraint firstItem="Mow-NN-RDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9z2-Go-ZAj"/>
-                            <constraint firstItem="ByW-Pk-Dgt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-33" id="Bdd-RJ-0ol"/>
+                            <constraint firstItem="ByW-Pk-Dgt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bdd-RJ-0ol"/>
                             <constraint firstItem="BFN-KO-Bec" firstAttribute="top" secondItem="VXr-ms-5FP" secondAttribute="bottom" constant="48" id="FQC-nB-bsG"/>
                             <constraint firstItem="BFN-KO-Bec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="76.5" id="ILt-1B-Dly"/>
                             <constraint firstItem="rab-TD-lwN" firstAttribute="top" secondItem="ugf-JW-ZdR" secondAttribute="bottom" constant="48" id="JEr-tw-E5d"/>
                             <constraint firstItem="ugf-JW-ZdR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NNp-63-cR3"/>
-                            <constraint firstItem="Fh3-ne-5zh" firstAttribute="top" secondItem="VXr-ms-5FP" secondAttribute="bottom" constant="19" id="QEE-d2-nEu"/>
                             <constraint firstItem="VXr-ms-5FP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TvG-Y7-Oge"/>
                             <constraint firstItem="VXr-ms-5FP" firstAttribute="top" secondItem="ugf-JW-ZdR" secondAttribute="bottom" constant="102" id="Xss-N0-C7g"/>
                             <constraint firstItem="ugf-JW-ZdR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dzW-3T-abc"/>
                             <constraint firstItem="rab-TD-lwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mPs-af-hGK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Fh3-ne-5zh" secondAttribute="trailing" constant="86" id="p9y-GJ-pBl"/>
                             <constraint firstItem="Nbr-tw-b3K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rq9-5W-h89"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="Nbr-tw-b3K" id="04i-Vu-OPK"/>
                         <outlet property="enekSzamTextField" destination="Mow-NN-RDf" id="dbb-BF-fFm"/>
-                        <outlet property="szamWarning" destination="Fh3-ne-5zh" id="7bB-vh-1Vs"/>
                         <outlet property="warning" destination="BFN-KO-Bec" id="CtA-7h-oUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.2" y="129.08545727136433"/>
+            <point key="canvasLocation" x="110.14492753623189" y="128.80434782608697"/>
         </scene>
         <!--View Enek-->
         <scene sceneID="WKz-Zg-3xN">
@@ -142,7 +130,7 @@
                         <viewControllerLayoutGuide type="bottom" id="KM2-Mk-vN1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3qh-ub-X5N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meU-wO-696">
