@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-App-83.5x83.5" translatesAutoresizingMaskIntoConstraints="NO" id="VXr-ms-5FP">
@@ -33,20 +33,6 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbr-tw-b3K">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="162" id="hc2-GU-1gr"/>
-                                    <constraint firstAttribute="height" constant="30" id="oK1-o7-jK4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                <state key="normal" title="Lapozzd Fel">
-                                    <color key="titleColor" red="0.1529411765" green="0.63529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="lapozzdFelButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gca-pR-cPg"/>
-                                    <segue destination="cSX-dJ-wAL" kind="show" id="hOA-wC-eui"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mow-NN-RDf">
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -91,12 +77,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbr-tw-b3K">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="hc2-GU-1gr"/>
+                                    <constraint firstAttribute="height" constant="30" id="oK1-o7-jK4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Lapozzd Fel">
+                                    <color key="titleColor" red="0.1529411765" green="0.63529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lapozzdFelButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gca-pR-cPg"/>
+                                    <segue destination="cSX-dJ-wAL" kind="show" id="hOA-wC-eui"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Nbr-tw-b3K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0aO-W3-Gto"/>
                             <constraint firstItem="ugf-JW-ZdR" firstAttribute="centerX" secondItem="VXr-ms-5FP" secondAttribute="centerX" id="3E9-et-mfc"/>
                             <constraint firstItem="Mow-NN-RDf" firstAttribute="top" secondItem="VXr-ms-5FP" secondAttribute="bottom" constant="48" id="52k-cg-Vnr"/>
-                            <constraint firstItem="Nbr-tw-b3K" firstAttribute="top" secondItem="Mow-NN-RDf" secondAttribute="bottom" constant="47" id="5Bs-2Q-n3b"/>
                             <constraint firstItem="ByW-Pk-Dgt" firstAttribute="top" secondItem="VXr-ms-5FP" secondAttribute="bottom" constant="19" id="6vZ-f9-QLr"/>
                             <constraint firstItem="Mow-NN-RDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9z2-Go-ZAj"/>
                             <constraint firstItem="ByW-Pk-Dgt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bdd-RJ-0ol"/>
@@ -107,8 +107,8 @@
                             <constraint firstItem="VXr-ms-5FP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TvG-Y7-Oge"/>
                             <constraint firstItem="VXr-ms-5FP" firstAttribute="top" secondItem="ugf-JW-ZdR" secondAttribute="bottom" constant="102" id="Xss-N0-C7g"/>
                             <constraint firstItem="ugf-JW-ZdR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dzW-3T-abc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nbr-tw-b3K" secondAttribute="bottom" constant="180" id="jSJ-gK-zWT"/>
                             <constraint firstItem="rab-TD-lwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mPs-af-hGK"/>
-                            <constraint firstItem="Nbr-tw-b3K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rq9-5W-h89"/>
                         </constraints>
                     </view>
                     <connections>
@@ -130,7 +130,7 @@
                         <viewControllerLayoutGuide type="bottom" id="KM2-Mk-vN1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3qh-ub-X5N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meU-wO-696">

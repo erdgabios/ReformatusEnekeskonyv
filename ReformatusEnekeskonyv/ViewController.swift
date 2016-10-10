@@ -43,7 +43,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         
-        
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -85,11 +84,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     
                     button.isEnabled = true
                     
-                    button.accessibilityActivate()
-                    
-                    
-                    
-                    
+                    //button.accessibilityActivate()
                     
                 
                     return true
@@ -104,6 +99,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         return false
     }
+    
+    
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dalOldal: ViewEnek = segue.destination as! ViewEnek
